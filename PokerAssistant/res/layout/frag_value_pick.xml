@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center" >
+
+    <Button
+        android:id="@+id/probcalc_valpick_button_ace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dip"
+        android:background="@drawable/button_cardpick"
+        android:text="@string/vAce"
+        android:textColor="@color/BLACK" />
+
+    <Button
+        android:id="@+id/probcalc_valpick_button_jack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/probcalc_valpick_button_queen"
+        android:layout_marginRight="10dip"
+        android:layout_toLeftOf="@+id/probcalc_valpick_button_queen"
+        android:background="@drawable/button_cardpick"
+        android:text="@string/vJack"
+        android:textColor="@color/BLACK" />
+
+    <Button
+        android:id="@+id/probcalc_valpick_button_queen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/probcalc_valpick_button_ace"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/button_cardpick"
+        android:text="@string/vQueen"
+        android:textColor="@color/BLACK" />
+
+    <Button
+        android:id="@+id/probcalc_valpick_button_king"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/probcalc_valpick_button_queen"
+        android:layout_alignBottom="@+id/probcalc_valpick_button_queen"
+        android:layout_marginLeft="10dip"
+        android:layout_toRightOf="@+id/probcalc_valpick_button_queen"
+        android:background="@drawable/button_cardpick"
+        android:text="@string/vKing"
+        android:textColor="@color/BLACK" />
+
+    <Button
+        android:id="@+id/probcalc_valpick_button_8"
+        android:layout_width="50dip"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/probcalc_valpick_button_jack"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/button_cardpick"
+        android:text="@string/v8"
+        android:textColor="@color/BLACK" />
+
+    <Button
+        android:id="@+id/probcalc_valpick_button_9"
+        android:layout_width="50dip"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/probcalc_valpick_button_8"
+        android:layout_marginLeft="10dip"
+        android:layout_toRightOf="@+id/probcalc_valpick_button_8"
+        android:background="@drawable/button_cardpick"
+        android:text="@string/v9"
+        android:textColor="@color/BLACK" />
+
+    <Button
+        android:id="@+id/probcalc_valpick_button_7"
+        android:layout_width="50dip"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/probcalc_valpick_button_8"
+        android:layout_marginRight="10dip"
+        android:layout_toLeftOf="@+id/probcalc_valpick_button_8"
+        android:background="@drawable/button_cardpick"
+        android:text="@string/v7"
+        android:textColor="@color/BLACK" />
+
+    <Button
+        android:id="@+id/probcalc_valpick_button_10"
+        android:layout_width="50dip"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/probcalc_valpick_button_9"
+        android:layout_alignBottom="@+id/probcalc_valpick_button_9"
+        android:layout_marginLeft="10dip"
+        android:layout_toRightOf="@+id/probcalc_valpick_button_9"
+        android:background="@drawable/button_cardpick"
+        android:text="@string/v10"
+        android:textColor="@color/BLACK" />
+
+    <Button
+        android:id="@+id/probcalc_valpick_button_6"
+        android:layout_width="50dip"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/probcalc_valpick_button_7"
+        android:layout_alignBottom="@+id/probcalc_valpick_button_7"
+        android:layout_marginRight="10dip"
+        android:layout_toLeftOf="@+id/probcalc_valpick_button_7"
+        android:background="@drawable/button_cardpick"
+        android:text="@string/v6"
+        android:textColor="@color/BLACK" />
+
+    <Button
+        android:id="@+id/probcalc_valpick_button_4"
+        android:layout_width="50dip"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/probcalc_valpick_button_9"
+        android:layout_below="@+id/probcalc_valpick_button_9"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/button_cardpick"
+        android:text="@string/v4"
+        android:textColor="@color/BLACK" />
+
+    <Button
+        android:id="@+id/probcalc_valpick_button_5"
+        android:layout_width="50dip"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/probcalc_valpick_button_4"
+        android:layout_alignBottom="@+id/probcalc_valpick_button_4"
+        android:layout_marginLeft="10dip"
+        android:layout_toRightOf="@+id/probcalc_valpick_button_4"
+        android:background="@drawable/button_cardpick"
+        android:text="@string/v5"
+        android:textColor="@color/BLACK" />
+
+    <Button
+        android:id="@+id/probcalc_valpick_button_3"
+        android:layout_width="50dip"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/probcalc_valpick_button_7"
+        android:layout_below="@+id/probcalc_valpick_button_7"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/button_cardpick"
+        android:text="@string/v3"
+        android:textColor="@color/BLACK" />
+
+    <Button
+        android:id="@+id/probcalc_valpick_button_2"
+        android:layout_width="50dip"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/probcalc_valpick_button_3"
+        android:layout_alignBottom="@+id/probcalc_valpick_button_3"
+        android:layout_marginRight="10dip"
+        android:layout_toLeftOf="@+id/probcalc_valpick_button_3"
+        android:background="@drawable/button_cardpick"
+        android:text="@string/v2"
+        android:textColor="@color/BLACK" />
+
+</RelativeLayout>

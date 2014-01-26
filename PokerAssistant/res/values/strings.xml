@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Poker Assistant</string>
+    <string name="action_settings">Settings</string>
+    <string name="button_finish">Close</string>
+    <string name="button_probcalc">Probability Calculator</string>
+    <string name="button_practice_match">Practice match</string>
+    <string name="button_poker_session">New poker session</string>
+    <string name="title_activity_prob_calc">Probability Calculator</string>
+    <string name="end_dialog_message">Are you sure you want to leave?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="new_calc_probcalc">New Calculation</string>
+    <string name="spade">Spade</string>
+    <string name="heart">Heart</string>
+    <string name="diamond">Diamond</string>
+    <string name="club">Club</string>
+    <string name="v2">2</string>
+    <string name="v3">3</string>
+    <string name="v4">4</string>
+    <string name="v5">5</string>
+    <string name="v6">6</string>
+    <string name="v7">7</string>
+    <string name="v8">8</string>
+    <string name="v9">9</string>
+    <string name="v10">10</string>
+    <string name="vJack">J</string>
+    <string name="vQueen">Q</string>
+    <string name="vKing">K</string>
+    <string name="vAce">A</string>
+    <string name="probcalc_hand">Your hand cards</string>
+    <string name="probcalc_comm">Community cards</string>
+    <string name="probcalc_handC1">-----</string>
+    <string name="probcalc_handC2"></string>
+    <string name="flop">Flop</string>
+    <string name="turn">Turn</string>
+    <string name="river">River</string>
+    <string name="probcalc_fl_C1"></string>
+    <string name="probcalc_fl_C2"></string>
+    <string name="probcalc_fl_C3"></string>
+    <string name="probcalc_t_C"></string>
+    <string name="probcalc_r_C"></string>
+    <string name="Ace">Ace</string>
+    <string name="King">King</string>
+    <string name="Queen">Queen</string>
+    <string name="Jack">Jack</string>
+    <string name="menu_flop">Set the flop</string>
+    <string name="menu_question">What do i have?</string>
+    <string name="menu_refresh">Reset</string>
+    <string name="menu_turn">Set the turn card</string>
+    <string name="menu_river">Set the river card</string>
+    <string name="title_activity_card_pick">CardPick</string>
+    <string name="probcalc_opponent">Number of other players</string>
+    <string name="probcalc_title_opponent_icon">Set the other hand</string>
+    <string name="probcalc_title_winodd_icon">Calculate my wining odds</string>
+    <string name="probcalc_title_mc_icon">Calculate by using the mc simulation</string>
+    <string name="preference_file_key">com.FedorApps.pokerassistant</string>
+
+    <!-- Strings Poker Session -->
+
+    <string name="ps_current_odd">Current odd:</string>
+    <string name="ps_suggested_move">Bet limit (Advice):</string>
+    <string name="check">Check</string>
+    <string name="call">Call</string>
+    <string name="fold">Fold</string>
+    <string name="all_in">ALL IN</string>
+    <string name="other">Other:</string>
+    <string name="okay">OK</string>
+    <string name="pot">Pot</string>
+    <string name="bet">Bet</string>
+    <string name="raise">Raise</string>
+    <string name="set_hand">Set hand</string>
+    <string name="set_flop">Set flop</string>
+    <string name="set_turn">Set turn</string>
+    <string name="set_river">Set river</string>
+    <string name="winner_select">Select the winner</string>
+    <string name="split_pot">Split Pot</string>
+    <string name="split_pot_toast">Select the winners and click the OK Button.</string>
+    <string name="select_dealer_toast">Select the dealer</string>
+    <string name="jump_next_round">Jump to the next round</string>
+
+    <!-- Strings Poker Session end -->
+
+
+    <!-- Strings Poker Session confi -->
+
+    <string name="ps_confi_diaTitle">Adjust the session settings</string>
+    <string name="ps_confi_plus">+</string>
+    <string name="ps_confi_minus">-</string>
+    <string name="ps_confi_initial_chip">Initial chip amount:</string>
+    <string name="ps_confi_number_of_players">Number of players (including you):</string>
+    <string name="ps_confi_bb">Big blind:</string>
+    <string name="ps_confi_sb">Small blind:</string>
+    <string name="ps_confi_ante">Ante:</string>
+
+    <!-- String Poker Session confi end -->
+
+
+    <!-- String Poker Session menu player out -->
+
+    <string name="ps_menu_player_out_rebuy_stack_toast">Set the rebuy stack</string>
+
+    <!-- String Poker Session menu player out end -->
+
+
+    <!-- Strings Poker Session menu player in -->
+
+    <string name="ps_menu_player_in_player_statictics">Player statistics:</string>
+    <string name="ps_menu_player_in_hands_played_title">Hands played:</string>
+    <string name="ps_menu_player_in_hands_won_title">Hands played and won:</string>
+    <string name="ps_menu_player_in_overall_win">Overall winning rate:</string>
+    <string name="ps_menu_player_in_balance">Balance:</string>
+    <string name="ps_menu_player_in_max_amount">Biggest chip amount:</string>
+    <string name="ps_menu_player_in_min_amount">Smallest chip amount:</string>
+    <string name="ps_menu_player_in_average_amount">Average chip amount:</string>
+    <string name="ps_menu_player_in_name">Name:</string>
+    <string name="ps_menu_player_in_chip_amount">Chip amount:</string>
+    <string name="ps_menu_player_in_apply">Apply</string>
+    <string name="ps_menu_player_in_close">Close</string>
+    <string name="ps_menu_player_in_remove_player">Remove player</string>
+
+    <!-- Strings Poker Session menu player in end -->
+
+
+    <!-- Strings Poker Session menu blind -->
+
+    <string name="ps_menu_blind_insert_values_toast">Please insert the blind values.</string>
+
+    <!-- Strings Poker Session menu blind end -->
+
+
+    <!-- Strings Practice Match -->
+
+    <string name="pm_menu_confi_diaTitle">Adjust the match settings</string>
+    <string name="pm_toast_normal_unlock">Win an easy game with 10 players to unlock "normal".</string>
+    <string name="pm_toast_hard_unlock">Win a hard game with 10 players to unlock "hard".</string>
+
+    <!-- String Practice Match end -->
+
+    <color name="RED">#FF3030</color>
+    <color name="RED_50">#88FF3030</color>
+    <color name="RED_20">#22FF3030</color>
+    <color name="GREEN">#00CD66</color>
+    <color name="GREEN_50">#8800Cd66</color>
+    <color name="GREEN_20">#2200Cd66</color>
+    <color name="WHITE">#FFFFFF</color>
+    <color name="BLACK">#000000</color>
+    <color name="GREY">#8B8989</color>
+    <color name="test">#fff3f3</color>
+    <color name="WHITE_50_trans">#88FFFFFF</color>
+    <color name="android_holo_blue_light">#33b5e5 </color>
+    <color name="android_holo_blue_dark">#0099cc</color>
+    <color name="android_holo_blue_bright">#00ddff</color>
+    <color name="android_holo_blue_bright_50_per_cent">#8800ddff</color>
+    <color name="android_holo_blue_bright_20_per_cent">#2200ddff</color>
+    <color name="Royal_BLUE">#4876FF</color>
+    <color name="Royal_BLUE50">#884876FF</color>
+    <color name="poker_table">#01A487</color>
+    <color name="TRANSPARENT">#FFFFFFFF</color>
+
+    <string name="title_activity_poker_session">PokerSession</string>
+    <string name="title_activity_bet_amount_pick">BetAmountPick</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_ps_start_configuration">PsStartConfigurationActivity</string>
+    <string name="title_activity_ps_menu">PsMenuActivity</string>
+    <string name="title_activity_ps_menu_player_out">PsMenuPlayerOut</string>
+    <string name="title_activity_ps_menu_player_in">PsMenuPlayerIn</string>
+    <string name="title_activity_ps_menu_blind">PsMenuBlindActivity</string>
+    <string name="title_activity_pm_confi">PmConfiActivity</string>
+    <string name="title_activity_practice_match">PracticeMatch</string>
+
+</resources>

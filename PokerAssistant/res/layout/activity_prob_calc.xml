@@ -1,0 +1,182 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProbCalc" >
+
+    <TextView
+        android:id="@+id/probcalc_textview_hand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="5dip"
+        android:layout_marginTop="30dp"
+        android:text="@string/probcalc_hand"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/probcalc_textview_turn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/probcalc_textview_comm"
+        android:layout_below="@+id/probcalc_button_flop1"
+        android:layout_marginTop="20dip"
+        android:text="@string/turn"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/probcalc_textview_river"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/probcalc_textview_turn"
+        android:layout_below="@+id/probcalc_button_turn1"
+        android:layout_marginTop="20dip"
+        android:text="@string/river"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/probcalc_textview_flop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/probcalc_textview_comm"
+        android:layout_below="@+id/probcalc_textview_comm"
+        android:layout_marginTop="20dip"
+        android:text="@string/flop"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/probcalc_edittext_oppo_num"
+        android:layout_width="100dip"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/probcalc_textview_opponent"
+        android:layout_below="@+id/probcalc_textview_opponent"
+        android:layout_marginTop="10dip"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:textSize="12sp" >
+
+        <requestFocus />
+    </EditText>
+
+    
+
+    <TextView
+        android:id="@+id/probcalc_textview_comm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/probcalc_textview_hand"
+        android:layout_below="@+id/probcalc_button_hand1"
+        android:layout_marginTop="25dp"
+        android:text="@string/probcalc_comm"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/probcalc_textview_opponent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/probcalc_textview_hand"
+        android:layout_alignParentRight="true"
+        android:text="@string/probcalc_opponent"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/probcalc_button_flop1"
+        android:layout_width="34dp"
+        android:layout_height="48dp"
+        android:layout_alignLeft="@+id/probcalc_textview_flop"
+        android:layout_below="@+id/probcalc_textview_flop"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_card_in_game_back"
+        android:enabled="true"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/probcalc_button_flop2"
+        android:layout_width="34dp"
+        android:layout_height="48dp"
+        android:layout_alignBottom="@+id/probcalc_button_flop1"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/probcalc_button_flop1"
+        android:background="@drawable/button_card_in_game_back"
+        android:enabled="true"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/probcalc_button_flop3"
+        android:layout_width="34dp"
+        android:layout_height="48dp"
+        android:layout_alignBottom="@+id/probcalc_button_flop1"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/probcalc_button_flop2"
+        android:background="@drawable/button_card_in_game_back"
+        android:enabled="true"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+    
+    <Button
+        android:id="@+id/probcalc_button_hand2"
+        android:layout_width="34dp"
+        android:layout_height="48dp"
+        android:layout_alignLeft="@+id/probcalc_textview_hand"
+        android:layout_below="@+id/probcalc_textview_hand"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_card_in_game_back"
+        android:enabled="true"
+        android:textColor="@color/WHITE"
+        android:textSize="13sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/probcalc_button_hand1"
+        android:layout_width="34dp"
+        android:layout_height="48dp"
+        android:layout_alignBottom="@+id/probcalc_button_hand2"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/probcalc_button_hand2"
+        android:background="@drawable/button_card_in_game_back"
+        android:enabled="true"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/probcalc_button_turn1"
+        android:layout_width="34dp"
+        android:layout_height="48dp"
+        android:layout_alignLeft="@+id/probcalc_textview_turn"
+        android:layout_below="@+id/probcalc_textview_turn"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_card_in_game_back"
+        android:enabled="true"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/probcalc_button_river1"
+        android:layout_width="34dp"
+        android:layout_height="48dp"
+        android:layout_alignLeft="@+id/probcalc_textview_river"
+        android:layout_below="@+id/probcalc_textview_river"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_card_in_game_back"
+        android:enabled="true"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewTimeTest"
+        android:textIsSelectable="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>

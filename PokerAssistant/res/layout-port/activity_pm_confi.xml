@@ -1,0 +1,107 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    tools:context=".PsStartConfigurationActivity" >
+
+    <TextView
+        android:id="@+id/pm_conf_textViewPlNumTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center|center_horizontal"
+        android:text="@string/ps_confi_number_of_players"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/pm_conf_button_plNum_minus"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignLeft="@+id/pm_conf_textViewPlNumTitle"
+        android:layout_below="@+id/pm_conf_textViewPlNumTitle"
+        android:layout_marginTop="24dp"
+        android:gravity="center|center_horizontal"
+        android:text="@string/ps_confi_minus"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/pm_conf_textViewPlNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/pm_conf_button_plNum_minus"
+        android:layout_centerInParent="true"
+        android:gravity="center|center_horizontal"
+        android:text="8"
+        android:textSize="35sp" />
+
+    <Button
+        android:id="@+id/pm_conf_button_plNum_plus"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignBottom="@+id/pm_conf_textViewPlNum"
+        android:layout_alignRight="@+id/pm_conf_textViewPlNumTitle"
+        android:gravity="center|center_horizontal"
+        android:text="@string/ps_confi_plus"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/pm_confi_textView_diff_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/pm_conf_button_plNum_minus"
+        android:layout_alignTop="@+id/pm_comfi_diff_buttons"
+        android:layout_marginTop="60dp"
+        android:text="Difficulty:"
+        android:textSize="24sp" />
+
+    <LinearLayout
+        android:id="@+id/pm_comfi_diff_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pm_conf_textViewPlNum"
+        android:layout_marginTop="48dp"
+        android:layout_toRightOf="@+id/pm_confi_textView_diff_title"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/pm_confi_button_easy"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Easy" />
+
+        <Button
+            android:id="@+id/pm_confi_button_normal"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            android:text="Normal" />
+
+        <Button
+            android:id="@+id/pm_confi_button_hard"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            android:text="Hard" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/pm_conf_button_pos"
+        android:layout_width="96dp"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:text="Start" />
+
+    <Button
+        android:id="@+id/pm_conf_button_neg"
+        android:layout_width="96dp"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="Cancel" />
+
+</RelativeLayout>

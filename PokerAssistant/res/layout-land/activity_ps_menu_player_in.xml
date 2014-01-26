@@ -1,0 +1,241 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/ps_menu_player_in_linLay_stats"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="8dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/ps_menu_player_in_textView_stats_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ps_menu_player_in_player_statictics"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/ps_menu_player_in_textView_handsPlayed"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="@string/ps_menu_player_in_hands_played_title"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/ps_menu_player_in_textView_handsPlayedValue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/ps_menu_player_in_textView_handsWon"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="@string/ps_menu_player_in_hands_won_title"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/ps_menu_player_in_textView_handsWonValue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/ps_menu_player_in_textView_handsWonOverall"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="@string/ps_menu_player_in_overall_win"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/ps_menu_player_in_textView_handsWonOverallValue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/ps_menu_player_in_textView_balance"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="@string/ps_menu_player_in_balance"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/ps_menu_player_in_textView_balanceValue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/ps_menu_player_in_textView_maximalStack"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="@string/ps_menu_player_in_max_amount"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/ps_menu_player_in_textView_maximalStackValue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/ps_menu_player_in_textView_minimalStack"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="@string/ps_menu_player_in_min_amount"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/ps_menu_player_in_textView_minimalStackValue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/ps_menu_player_in_textView_averageStack"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="@string/ps_menu_player_in_average_amount"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/ps_menu_player_in_textView_averageStackValue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="13sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/ps_menu_player_in_relLay_controls"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+
+        <TextView
+            android:id="@+id/ps_menu_player_in_textView_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="@string/ps_menu_player_in_name" />
+
+        <EditText
+            android:id="@+id/ps_menu_player_in_editText_name"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/ps_menu_player_in_textView_name"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/ps_menu_player_in_textView_name"
+            android:imeOptions="actionDone"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/ps_menu_player_in_textView_chips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/ps_menu_player_in_textView_name"
+            android:layout_below="@+id/ps_menu_player_in_textView_name"
+            android:layout_marginTop="16dp"
+            android:text="@string/ps_menu_player_in_chip_amount" />
+
+        <EditText
+            android:id="@+id/ps_menu_player_in_editText_chips"
+            android:layout_width="105dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/ps_menu_player_in_textView_chips"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/ps_menu_player_in_textView_chips"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/ps_menu_player_in_button_remove_player"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ps_menu_player_in_textView_chips"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/button_mainmenu_red"
+            android:text="@string/ps_menu_player_in_remove_player" />
+
+        <Button
+            android:id="@+id/ps_menu_player_in_button_apply"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/ps_menu_player_in_textView_name"
+            android:layout_alignParentBottom="true"
+            android:text="@string/ps_menu_player_in_apply" />
+
+        <Button
+            android:id="@+id/ps_menu_player_in_button_close"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:text="@string/ps_menu_player_in_close" />
+    </RelativeLayout>
+
+</LinearLayout>

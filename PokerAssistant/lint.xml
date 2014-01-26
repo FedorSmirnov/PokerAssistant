@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="CutPasteId">
+        <ignore path="src/com/FedorApps/pokerassistant/ProbCalc.java" />
+    </issue>
+    <issue id="HandlerLeak" severity="ignore" />
+</lint>

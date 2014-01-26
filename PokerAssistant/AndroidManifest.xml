@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.FedorApps.pokerassistant"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.FedorApps.pokerassistant.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.FedorApps.pokerassistant.ProbCalc"
+            android:label="@string/title_activity_prob_calc"
+            android:parentActivityName="com.FedorApps.pokerassistant.MainActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.FedorApps.pokerassistant.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.FedorApps.pokerassistant.CardPick"
+            android:label="@string/title_activity_card_pick"
+            android:theme="@android:style/Theme.Holo.Dialog" >
+        </activity>
+
+        <service
+            android:name="com.FedorApps.pokerassistant.OddCalculatorService"
+            android:process=":MyProcess" >
+        </service>
+
+        <activity
+            android:name="com.FedorApps.pokerassistant.pokerSession.PokerSession"
+            android:label="@string/title_activity_poker_session"
+            android:screenOrientation="sensorLandscape"
+            android:theme="@android:style/Theme.Holo" >
+        </activity>
+        <activity
+            android:name="com.FedorApps.pokerassistant.pokerSession.BetAmountPick"
+            android:label="@string/title_activity_bet_amount_pick"
+            android:screenOrientation="sensorLandscape"
+            android:theme="@android:style/Theme.Holo.Dialog" >
+        </activity>
+        <activity
+            android:name="com.FedorApps.pokerassistant.pokerSession.PsStartConfigurationActivity"
+            android:label="@string/title_activity_ps_start_configuration"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Dialog" >
+        </activity>
+        <activity
+            android:name="com.FedorApps.pokerassistant.pokerSession.PsMenuActivity"
+            android:label="@string/title_activity_ps_menu"
+            android:screenOrientation="sensorLandscape"
+            android:theme="@android:style/Theme.Holo.Dialog" >
+        </activity>
+        <activity
+            android:name="com.FedorApps.pokerassistant.pokerSession.PsMenuPlayerOut"
+            android:label="@string/title_activity_ps_menu_player_out"
+            android:screenOrientation="sensorLandscape"
+            android:theme="@android:style/Theme.Holo.Dialog" >
+        </activity>
+        <activity
+            android:name="com.FedorApps.pokerassistant.pokerSession.PsMenuPlayerIn"
+            android:label="@string/title_activity_ps_menu_player_in"
+            android:screenOrientation="sensorLandscape"
+            android:theme="@android:style/Theme.Holo.Dialog" >
+        </activity>
+        <activity
+            android:name="com.FedorApps.pokerassistant.pokerSession.PsMenuBlindActivity"
+            android:label="@string/title_activity_ps_menu_blind"
+            android:screenOrientation="sensorLandscape"
+            android:theme="@android:style/Theme.Holo.Dialog" >
+        </activity>
+        <activity
+            android:name="com.FedorApps.pokerassistant.practiceMatch.PmConfiActivity"
+            android:label="@string/title_activity_pm_confi"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Dialog" >
+        </activity>
+        <activity
+            android:name="com.FedorApps.pokerassistant.practiceMatch.PracticeMatch"
+            android:label="@string/title_activity_practice_match"
+            android:screenOrientation="landscape" 
+            android:theme="@android:style/Theme.Holo">
+        </activity>
+    </application>
+
+</manifest>

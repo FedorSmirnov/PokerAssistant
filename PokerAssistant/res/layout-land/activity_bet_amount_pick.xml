@@ -1,0 +1,150 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="1000dp"
+    android:layout_height="1000dp"
+    tools:context=".BetAmountPick" >
+
+    <Button
+        android:id="@+id/betap_button1"
+        android:layout_width="75dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@+id/betap_buttonAllIn"
+        android:background="@drawable/button_cardpick"
+        android:textColor="@color/BLACK"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/betap_button2"
+        android:layout_width="75dp"
+        android:layout_height="48dp"
+        android:layout_alignBottom="@+id/betap_button1"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@+id/betap_button1"
+        android:background="@drawable/button_cardpick"
+        android:textColor="@color/BLACK"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/betap_button3"
+        android:layout_width="75dp"
+        android:layout_height="48dp"
+        android:layout_alignBottom="@+id/betap_button1"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@+id/betap_button2"
+        android:background="@drawable/button_cardpick"
+        android:textColor="@color/BLACK"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/betap_button4"
+        android:layout_width="75dp"
+        android:layout_height="48dp"
+        android:layout_alignLeft="@+id/betap_button1"
+        android:layout_below="@+id/betap_button1"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/button_cardpick"
+        android:textColor="@color/BLACK"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/betap_button5"
+        android:layout_width="75dp"
+        android:layout_height="48dp"
+        android:layout_alignBottom="@+id/betap_button4"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@+id/betap_button4"
+        android:background="@drawable/button_cardpick"
+        android:textColor="@color/BLACK"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/betap_button6"
+        android:layout_width="75dp"
+        android:layout_height="48dp"
+        android:layout_alignBottom="@+id/betap_button4"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@+id/betap_button5"
+        android:background="@drawable/button_cardpick"
+        android:textColor="@color/BLACK"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/betap_button7"
+        android:layout_width="75dp"
+        android:layout_height="48dp"
+        android:layout_alignLeft="@+id/betap_button4"
+        android:layout_below="@+id/betap_button4"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/button_cardpick"
+        android:textColor="@color/BLACK"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/betap_button8"
+        android:layout_width="75dp"
+        android:layout_height="48dp"
+        android:layout_alignBottom="@+id/betap_button7"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@+id/betap_button7"
+        android:background="@drawable/button_cardpick"
+        android:textColor="@color/BLACK"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/betap_button9"
+        android:layout_width="75dp"
+        android:layout_height="48dp"
+        android:layout_alignBottom="@+id/betap_button7"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@+id/betap_button8"
+        android:background="@drawable/button_cardpick"
+        android:textColor="@color/BLACK"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/betap_buttonAllIn"
+        android:layout_width="150dp"
+        android:layout_height="96dp"
+        android:layout_alignTop="@+id/betap_button1"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/button_cardpick"
+        android:text="@string/all_in"
+        android:textColor="@color/RED"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/betap_text_other"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/betap_edit_other"
+        android:layout_marginRight="8dp"
+        android:layout_toLeftOf="@+id/betap_edit_other"
+        android:text="@string/other"
+        android:textColor="@color/BLACK" />
+
+    <EditText
+        android:id="@+id/betap_edit_other"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/betap_button_other_okay"
+        android:layout_marginRight="8dp"
+        android:layout_toLeftOf="@+id/betap_button_other_okay"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/betap_button_other_okay"
+        android:layout_width="48dp"
+        android:layout_height="30dp"
+        android:layout_alignRight="@+id/betap_button9"
+        android:layout_below="@+id/betap_button9"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/button_cardpick"
+        android:text="@string/okay"
+        android:textColor="@color/BLACK"
+        android:textSize="12sp" />
+
+</RelativeLayout>

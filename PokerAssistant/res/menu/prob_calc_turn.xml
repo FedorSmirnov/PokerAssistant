@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/action_settings"/>
+    <item
+        android:id="@+id/monte_carlo"
+        android:icon="@drawable/probcalc_monte_carlo_icon"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:title="@string/probcalc_title_mc_icon"/>
+    <item
+        android:id="@+id/question"
+        android:icon="@drawable/question_mark_icon"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:title="@string/menu_question"/>
+    <item
+        android:id="@+id/refresh"
+        android:icon="@drawable/refresh_icon"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:title="@string/menu_refresh"/>
+    <item
+        android:id="@+id/turn"
+        android:icon="@drawable/turn_icon"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:title="@string/menu_turn">
+    </item>
+
+</menu>

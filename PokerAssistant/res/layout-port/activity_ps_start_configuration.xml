@@ -1,0 +1,210 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    tools:context=".PsStartConfigurationActivity" >
+
+    <TextView
+        android:id="@+id/ps_conf_textViewPlNumTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center|center_horizontal"
+        android:text="@string/ps_confi_number_of_players"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/ps_conf_button_plNum_minus"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignLeft="@+id/ps_conf_textViewPlNumTitle"
+        android:layout_below="@+id/ps_conf_textViewPlNumTitle"
+        android:layout_marginTop="24dp"
+        android:gravity="center|center_horizontal"
+        android:text="@string/ps_confi_minus"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/ps_conf_textViewPlNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ps_conf_button_plNum_minus"
+        android:layout_centerInParent="true"
+        android:gravity="center|center_horizontal"
+        android:text="8"
+        android:textSize="35sp" />
+
+    <Button
+        android:id="@+id/ps_conf_button_plNum_plus"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignBottom="@+id/ps_conf_textViewPlNum"
+        android:layout_alignRight="@+id/ps_conf_textViewPlNumTitle"
+        android:gravity="center|center_horizontal"
+        android:text="@string/ps_confi_plus"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/ps_conf_textView_bigBlindTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ps_conf_textViewPlNumTitle"
+        android:layout_below="@+id/ps_conf_textView_initialCA"
+        android:layout_marginTop="24dp"
+        android:gravity="center|center_horizontal"
+        android:text="@string/ps_confi_bb"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/ps_conf_editText_BigBlind"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ps_conf_textView_bigBlindTitle"
+        android:layout_alignLeft="@+id/ps_conf_editText_initialCA"
+        android:gravity="center|center_horizontal"
+        android:imeOptions="actionDone"
+        android:inputType="number"
+        android:text="30"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/ps_conf_textView_smallBlindTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ps_conf_textView_bigBlindTitle"
+        android:layout_below="@+id/ps_conf_textView_bigBlindTitle"
+        android:layout_marginTop="24dp"
+        android:gravity="center|center_horizontal"
+        android:text="@string/ps_confi_sb"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/ps_conf_editText_SmallBlind"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ps_conf_textView_smallBlindTitle"
+        android:layout_alignLeft="@+id/ps_conf_editText_initialCA"
+        android:gravity="center|center_horizontal"
+        android:text="15"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/ps_conf_textView_anteTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ps_conf_textView_bigBlindTitle"
+        android:layout_below="@+id/ps_conf_textView_smallBlindTitle"
+        android:layout_marginTop="24dp"
+        android:gravity="center|center_horizontal"
+        android:text="@string/ps_confi_ante"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/ps_conf_editText_Ante"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ps_conf_textView_anteTitle"
+        android:layout_alignLeft="@+id/ps_conf_editText_initialCA"
+        android:gravity="center|center_horizontal"
+        android:imeOptions="actionDone"
+        android:inputType="number"
+        android:text="0"
+        android:textSize="15sp" />
+
+    <CheckBox
+        android:id="@+id/ps_conf_chechBox_blindLevel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ps_conf_textView_anteTitle"
+        android:layout_below="@+id/ps_conf_textView_anteTitle"
+        android:layout_marginTop="16dp"
+        android:gravity="center|center_horizontal"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/ps_conf_textView_blindLevelTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/ps_conf_chechBox_blindLevel"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@+id/ps_conf_chechBox_blindLevel"
+        android:gravity="center|center_horizontal"
+        android:text="Blind Levels"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/ps_conf_textView_blindIncrease"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ps_conf_chechBox_blindLevel"
+        android:layout_below="@+id/ps_conf_chechBox_blindLevel"
+        android:layout_marginTop="12dp"
+        android:gravity="center|center_horizontal"
+        android:text="Increase every"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/ps_conf_editText_blindLevelTime"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ps_conf_textView_blindIncrease"
+        android:layout_alignLeft="@+id/ps_conf_editText_initialCA"
+        android:gravity="center|center_horizontal"
+        android:imeOptions="actionDone"
+        android:inputType="number"
+        android:text="4"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/ps_conf_textView_blindLevelTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ps_conf_textView_blindIncrease"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@+id/ps_conf_editText_blindLevelTime"
+        android:gravity="center|center_horizontal"
+        android:text="min"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/ps_conf_textView_initialCA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ps_conf_textViewPlNumTitle"
+        android:layout_below="@+id/ps_conf_button_plNum_minus"
+        android:layout_marginTop="24dp"
+        android:gravity="center|center_horizontal"
+        android:text="@string/ps_confi_initial_chip"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/ps_conf_editText_initialCA"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ps_conf_textView_initialCA"
+        android:layout_marginLeft="24dp"
+        android:layout_toRightOf="@+id/ps_conf_textView_initialCA"
+        android:gravity="center|center_horizontal"
+        android:imeOptions="actionDone"
+        android:inputType="number"
+        android:text="500"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/ps_conf_button_pos"
+        android:layout_width="96dp"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:text="Start" />
+
+    <Button
+        android:id="@+id/ps_conf_button_neg"
+        android:layout_width="96dp"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="Cancel" />
+
+</RelativeLayout>

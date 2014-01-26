@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center" >
+
+    <ImageButton
+        android:id="@+id/probcalc_button_heart"
+        android:layout_width="100dip"
+        android:layout_height="48dp"
+        android:layout_alignBottom="@+id/probcalc_button_spade"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/probcalc_button_spade"
+        android:background="@drawable/button_cardpick"
+        android:contentDescription="@drawable/heart"
+        android:scaleType="center"
+        android:src="@drawable/heart" />
+
+    <ImageButton
+        android:id="@+id/probcalc_button_club"
+        android:layout_width="100dip"
+        android:layout_height="48dp"
+        android:layout_alignLeft="@+id/probcalc_button_heart"
+        android:layout_below="@+id/probcalc_button_heart"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_cardpick"
+        android:contentDescription="@drawable/club"
+        android:src="@drawable/club" />
+
+    <ImageButton
+        android:id="@+id/probcalc_button_diamond"
+        android:layout_width="100dip"
+        android:layout_height="48dp"
+        android:layout_alignBottom="@+id/probcalc_button_club"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/probcalc_button_club"
+        android:background="@drawable/button_cardpick"
+        android:contentDescription="@drawable/diamond"
+        android:src="@drawable/diamond" />
+
+    <ImageButton
+        android:id="@+id/probcalc_button_spade"
+        android:layout_width="100dip"
+        android:layout_height="48dp"
+        android:background="@drawable/button_cardpick"
+        android:contentDescription="@drawable/spade"
+        android:src="@drawable/spade" />
+
+</RelativeLayout>

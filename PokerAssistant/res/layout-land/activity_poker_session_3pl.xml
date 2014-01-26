@@ -1,0 +1,467 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:orientation="horizontal"
+    tools:context=".PokerSession" >
+
+    <!-- Layout für das Spielfeld -->
+
+    <RelativeLayout
+        android:id="@+id/game_area"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        android:background="@color/poker_table" >
+
+        <!-- You -->
+
+        <Button
+            android:id="@+id/ps_button_youSettings"
+            android:layout_width="120dp"
+            android:layout_height="56dp"
+            android:layout_alignLeft="@+id/ps_button_flop2"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="25dp"
+            android:background="@drawable/button_ps_player"
+            android:textColor="@color/BLACK" />
+
+        <Button
+            android:id="@+id/ps_button_hand1"
+            android:layout_width="34dp"
+            android:layout_height="48dp"
+            android:layout_alignLeft="@+id/ps_button_youSettings"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="35dp"
+            android:background="@drawable/button_card_in_game_back"
+            android:enabled="true"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/ps_button_hand2"
+            android:layout_width="34dp"
+            android:layout_height="48dp"
+            android:layout_alignBaseline="@+id/ps_button_hand1"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/ps_button_hand1"
+            android:background="@drawable/button_card_in_game_back"
+            android:enabled="true"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/ps_textView_money_you"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/ps_button_hand1"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="8dp"
+            android:text="10000000"
+            android:textColor="@color/BLACK" />
+
+        <TextView
+            android:id="@+id/ps_textView_bet_you"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/ps_button_hand1"
+            android:layout_alignLeft="@+id/ps_button_hand1"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="25dp"
+            android:text="100"
+            android:textColor="@color/BLACK" />
+
+        <TextView
+            android:id="@+id/ps_dealer_you"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignBottom="@+id/ps_textView_bet_you"
+            android:layout_alignLeft="@+id/ps_button_hand1"
+            android:background="@drawable/dealer_button"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="D"
+            android:textColor="@color/BLACK" />
+
+        <!-- You end -->
+
+
+        <!-- Community Cards -->
+
+        <Button
+            android:id="@+id/ps_button_flop1"
+            android:layout_width="34dp"
+            android:layout_height="48dp"
+            android:layout_alignBaseline="@+id/ps_button_flop3"
+            android:layout_marginRight="8dp"
+            android:layout_toLeftOf="@+id/ps_button_flop2"
+            android:background="@drawable/button_card_in_game_back"
+            android:enabled="true"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/ps_button_flop2"
+            android:layout_width="34dp"
+            android:layout_height="48dp"
+            android:layout_alignBaseline="@+id/ps_button_flop3"
+            android:layout_marginRight="8dp"
+            android:layout_toLeftOf="@+id/ps_button_flop3"
+            android:background="@drawable/button_card_in_game_back"
+            android:enabled="true"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/ps_button_flop3"
+            android:layout_width="34dp"
+            android:layout_height="48dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/button_card_in_game_back"
+            android:enabled="true"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/ps_button_turn"
+            android:layout_width="34dp"
+            android:layout_height="48dp"
+            android:layout_alignBaseline="@+id/ps_button_flop3"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@+id/ps_button_flop3"
+            android:background="@drawable/button_card_in_game_back"
+            android:enabled="true"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/ps_button_river"
+            android:layout_width="34dp"
+            android:layout_height="48dp"
+            android:layout_alignBaseline="@+id/ps_button_flop3"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@+id/ps_button_turn"
+            android:background="@drawable/button_card_in_game_back"
+            android:enabled="true"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/ps_textView_flop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/ps_button_flop3"
+            android:layout_marginBottom="4dp"
+            android:layout_toRightOf="@+id/ps_button_flop1"
+            android:text="@string/flop"
+            android:textColor="@color/BLACK" />
+
+        <TextView
+            android:id="@+id/ps_textView_turn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/ps_textView_flop"
+            android:layout_alignLeft="@+id/ps_button_turn"
+            android:layout_marginBottom="4dp"
+            android:text="@string/turn"
+            android:textColor="@color/BLACK" />
+
+        <TextView
+            android:id="@+id/ps_textView_river"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/ps_textView_flop"
+            android:layout_alignLeft="@+id/ps_button_river"
+            android:layout_marginBottom="4dp"
+            android:text="@string/river"
+            android:textColor="@color/BLACK" />
+
+        <TextView
+            android:id="@+id/ps_textView_potTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/ps_textView_flop"
+            android:layout_alignRight="@+id/ps_textViewPot"
+            android:layout_marginRight="8dp"
+            android:text="@string/pot"
+            android:textColor="@color/BLACK" />
+
+        <TextView
+            android:id="@+id/ps_textViewPot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ps_dealer_p1"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="25dp"
+            android:layout_toLeftOf="@+id/ps_button_flop1"
+            android:text="100000000"
+            android:textColor="@color/BLACK" />
+
+        <TextView
+            android:id="@+id/ps_textViewPotWithBets"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ps_textViewPot"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_toLeftOf="@+id/ps_button_flop1"
+            android:text="(10000)"
+            android:textColor="@color/BLACK" />
+
+        <!-- Community cards end -->
+
+
+        <!-- The other players -->
+
+        <ImageButton
+            android:id="@+id/ps_imageButton_p1"
+            android:layout_width="70dp"
+            android:layout_height="48dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/button_ps_player"
+            android:contentDescription="@drawable/ps_player_unfold"
+            android:src="@drawable/ps_player_unfold" />
+
+        <TextView
+            android:id="@+id/ps_textView_name_p1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/ps_imageButton_p1"
+            android:layout_alignTop="@+id/ps_imageButton_p1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/WHITE_50_trans"
+            android:text="Name4"
+            android:textColor="@color/BLACK" />
+
+        <TextView
+            android:id="@+id/ps_textView_money_p1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/ps_imageButton_p1"
+            android:layout_alignLeft="@+id/ps_imageButton_p1"
+            android:layout_marginBottom="8dp"
+            android:text="10000000"
+            android:textColor="@color/BLACK" />
+
+        <TextView
+            android:id="@+id/ps_textView_bet_p1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/ps_imageButton_p1"
+            android:layout_below="@+id/ps_imageButton_p1"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="20dp"
+            android:text="100"
+            android:textColor="@color/BLACK" />
+
+        <TextView
+            android:id="@+id/ps_dealer_p1"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignLeft="@+id/ps_imageButton_p1"
+            android:layout_alignTop="@+id/ps_textView_bet_p1"
+            android:background="@drawable/dealer_button"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="D"
+            android:textColor="@color/BLACK" />
+
+        <ImageButton
+            android:id="@+id/ps_imageButton_p2"
+            android:layout_width="70dp"
+            android:layout_height="48dp"
+            android:layout_alignBottom="@+id/ps_imageButton_p1"
+            android:layout_alignLeft="@id/ps_button_river"
+            android:layout_marginLeft="34dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/button_ps_player"
+            android:contentDescription="@drawable/ps_player_unfold"
+            android:src="@drawable/ps_player_unfold" />
+
+        <TextView
+            android:id="@+id/ps_textView_name_p2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/ps_imageButton_p2"
+            android:layout_alignTop="@+id/ps_imageButton_p2"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/WHITE_50_trans"
+            android:text="Name5"
+            android:textColor="@color/BLACK" />
+
+        <TextView
+            android:id="@+id/ps_textView_money_p2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/ps_imageButton_p2"
+            android:layout_alignLeft="@+id/ps_imageButton_p2"
+            android:layout_marginBottom="8dp"
+            android:text="10000000"
+            android:textColor="@color/BLACK" />
+
+        <TextView
+            android:id="@+id/ps_textView_bet_p2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/ps_imageButton_p2"
+            android:layout_below="@+id/ps_imageButton_p2"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="20dp"
+            android:text="100"
+            android:textColor="@color/BLACK" />
+
+        <TextView
+            android:id="@+id/ps_dealer_p2"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignLeft="@+id/ps_imageButton_p2"
+            android:layout_alignTop="@+id/ps_textView_bet_p2"
+            android:background="@drawable/dealer_button"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="D"
+            android:textColor="@color/BLACK" />
+
+        <!-- Other players end -->
+
+    </RelativeLayout>
+
+    <!-- Layout für die Bedienelemente (alles ausser dem Spielfeld) -->
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <!-- Layout für die Textviews für das Anzeigen -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="6"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textViewOddTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:text="@string/ps_current_odd"
+                android:textColor="@color/android_holo_blue_bright"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/textViewOdd"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textViewSuggestTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:text="@string/ps_suggested_move"
+                android:textColor="@color/android_holo_blue_bright"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/textViewSuggest"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:textColor="@color/android_holo_blue_bright"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <!-- Layout für die Buttons -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="7" >
+
+            <Button
+                android:id="@+id/ps_button_set_cards"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:background="@drawable/button_cardpick"
+                android:text="@string/set_hand"
+                android:textColor="@color/android_holo_blue_dark"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:id="@+id/upper_button_pair"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_below="@+id/ps_button_set_cards"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/ps_button_call"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_cardpick"
+                    android:text="@string/call"
+                    android:textColor="@color/android_holo_blue_dark"
+                    android:textSize="12sp" />
+
+                <Button
+                    android:id="@+id/ps_button_raise"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_cardpick"
+                    android:text="@string/raise"
+                    android:textColor="@color/android_holo_blue_dark"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lower_button_pair"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_below="@+id/upper_button_pair"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/ps_button_check_fold"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_cardpick"
+                    android:text="@string/fold"
+                    android:textColor="@color/android_holo_blue_dark"
+                    android:textSize="12sp" />
+
+                <Button
+                    android:id="@+id/ps_button_settings"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_cardpick"
+                    android:text="Menu"
+                    android:textColor="@color/android_holo_blue_dark"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>
